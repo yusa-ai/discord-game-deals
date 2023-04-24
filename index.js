@@ -2,6 +2,7 @@ const axios = require('axios');
 const fs = require('node:fs');
 const path = require('node:path');
 const {
+	ActivityType,
 	Client,
 	Collection,
 	EmbedBuilder,
@@ -50,6 +51,10 @@ mongoose.connect(uri).then(() => {
 client.login(process.env.DISCORD_BOT_TOKEN);
 
 client.once(Events.ClientReady, (c) => {
+	client.user.setActivity('for game deals', {
+		type: ActivityType.Watching,
+	});
+
 	console.log(`Ready! Logged in as ${c.user.tag}`);
 });
 
