@@ -5,7 +5,6 @@ const path = require('node:path');
 
 dotenv.config();
 const clientId = process.env.DISCORD_APP_ID;
-const guildId = process.env.DISCORD_GUILD_ID;
 const token = process.env.DISCORD_BOT_TOKEN;
 
 const commands = [];
