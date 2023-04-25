@@ -91,7 +91,7 @@ const toEmbed = (title, url, description, instructions, image) => {
 	const embed = new EmbedBuilder()
 		.setAuthor({
 			name: 'New Giveaway!',
-			url: 'https://github.com/yusa-ai/free-games',
+			url: 'https://github.com/yusa-ai/discord-game-deals',
 		})
 		.setTitle(title)
 		.setURL(url)
