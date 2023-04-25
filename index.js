@@ -112,7 +112,7 @@ const toEmbed = (title, url, description, instructions, image) => {
 };
 
 // Run every hour
-cron.schedule('* * 1 * * *', () => {
+cron.schedule('0 * * * *', () => {
 	axios
 		.get('https://www.gamerpower.com/api/filter', {
 			params: {
