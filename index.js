@@ -134,7 +134,10 @@ cron.schedule('* * 1 * * *', () => {
 						);
 
 						const channel = await client.channels.fetch(guild.channel_id);
-						await channel.send({ content: '@here', embeds: [embed] });
+						await channel.send({
+							content: `<@&${guild.role_id}>`,
+							embeds: [embed],
+						});
 
 						// Add to deal_ids
 						await Guild.updateOne(

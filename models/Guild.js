@@ -6,6 +6,7 @@ module.exports = mongoose.model(
 		guild_id: String,
 		guild_name: String,
 		channel_id: String,
+		role_id: String,
 		deal_ids: [Number],
 	})
 );
