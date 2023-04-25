@@ -133,9 +133,11 @@ cron.schedule('* * 1 * * *', () => {
 							deal.image
 						);
 
+						const text = guild.role_id ? `<@&${guild.role_id}>` : null;
+
 						const channel = await client.channels.fetch(guild.channel_id);
 						await channel.send({
-							content: `<@&${guild.role_id}>`,
+							content: text,
 							embeds: [embed],
 						});
 
