@@ -121,16 +121,7 @@ cron.schedule('* * 1 * * *', () => {
 			},
 		})
 		.then(async (response) => {
-			// Get all pairs of guild and channel ids
 			const guilds = await Guild.find({});
-			guilds.map((g) => {
-				return {
-					guild_id: g.guild_id,
-					channel_id: g.channel_id,
-					deal_ids: g.deal_ids,
-				};
-			});
-
 			for (const guild of guilds) {
 				for (const deal of response.data) {
 					if (!guild.deal_ids.includes(deal.id)) {
