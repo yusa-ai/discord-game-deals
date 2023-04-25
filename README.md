@@ -13,7 +13,7 @@
 
 ### 🏠 [Homepage](https://github.com/yusa-ai/discord-game-deals)
 
-## Install
+## Installation
 
 ```sh
 npm install
@@ -23,6 +23,16 @@ npm install
 
 ```sh
 node index.js
+```
+
+⚠️ To run this project, you need to have a `.env` file with the following variables:
+
+```
+DISCORD_BOT_TOKEN=my_discord_bot_token
+DISCORD_APP_ID=my_discord_app_id
+MONGODB_USERNAME=my_mongodb_username
+MONGODB_PASSWORD=my_mongodb_password
+MONGODB_DBNAME=my_mongodb_db_name
 ```
 
 ## Author
@@ -41,6 +51,10 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
+
+## Acknowledgements
+
+This Discord bot is built with [discord.js](https://discord.js.org/) and uses [GamerPower's Free Games & Giveaways API](https://www.gamerpower.com/api-read).
 
 ## 📝 License
 
