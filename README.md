@@ -9,7 +9,9 @@
   </a>
 </p>
 
-> CyberDeals sends game deals (currently only free games from popular stores such as Steam and the Epic Games Store) to your selected text channel. It can also ping your selected role!
+> This Discord bot sends game deals (currently only free games from popular stores such as Steam and the Epic Games Store) to your selected text channel. It can also ping your selected role!  
+
+I run an instance of the bot named CyberDeals that can be invited on any server using [this link](https://discord.com/api/oauth2/authorize?client_id=1067190793984548864&permissions=84992&scope=bot%20applications.commands). It is supposed to be live 24/7 but can be down at any time for maintenance.  
 
 ### 🏠 [Homepage](https://github.com/yusa-ai/discord-game-deals)
 
