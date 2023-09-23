@@ -116,7 +116,7 @@ cron.schedule('0 * * * *', () => {
 	axios
 		.get('https://www.gamerpower.com/api/filter', {
 			params: {
-				platform: 'epic-games-store.steam.ubisoft.gog.battlenet.origin',
+				platform: 'epic-games-store.steam.ubisoft.gog',
 				type: 'game',
 			},
 		})
